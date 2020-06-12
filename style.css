@@ -9,6 +9,12 @@
     margin: 0 auto;
 }
 
+.clearfix {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
 html, 
 body {
     font-family: 'Lato', sans-serif;
@@ -19,8 +25,9 @@ body {
 }
 
 header {
-    background-image: linear-gradient(rgba(190, 190, 190, 0.54),rgba(154, 154, 154, 0.54)),url(images/backgorund.jpg);
+    background-image: linear-gradient(rgba(255, 255, 197, 0.54),rgba(154, 154, 154, 0.54)),url(images/backgorund.jpg);
     background-size: cover;
+    background-position: center;
     height: 100vh;
 }
 
@@ -28,45 +35,24 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-25%,-25%);
     width: 1140px;
-}
-
-section {
-    padding: 100 0;
 }
 
 h1 {
     color: #000;
     font-size: 200%;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 2px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
 }
 
-h2 {
-    font-size: 150%;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    word-spacing: 2px;
+p {
+    font-size: 120%;
+    font-family: cursive;
+    margin: 120px auto;
 }
 
-h2:after {
-    display: block;
-    height: 2px;
-    width: 100px;
-    background-color: #959494;
-    content: " ";
-    margin: 0 auto;
-    margin-top: 20px;
-    
-}
-
-section {
-    width: 100%;
-}
 
 .nav {
     float: right;
@@ -74,29 +60,21 @@ section {
 .nav li {
     display: inline-block;
     list-style: none;
-    margin-top: 20px;
-    margin-right: 10px;
-    padding: 5px;
-    
+    margin-top: 15px;
+    margin-right: 15px;
+    padding: 12px 10px;
+    letter-spacing: 1px;
 }
 
 .nav li a:link,
 .nav li a:visited {
     padding: 8px 0;
     text-decoration: none;
-    text-transform: uppercase;
-    color: #000;
+    text-transform: capitalize;
     font-size: 110%;
-    transition: border-bottom 0.2s;
+    transition: border-bottom 0.1s;
 }
 .nav li a:hover,
 .nav li a:active {
-    border-bottom: 2px solid #526a6d;
-}
-
-/***************************************/
-.mumbai {
-    background-image: url(images/mumbai_back.jpg);
-    background-size: 100%;
-    height: 75vh;
+    border-bottom: 2px solid #8eaeb5;
 }
